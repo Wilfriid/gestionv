@@ -1,0 +1,9 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enregistrer</button>
+</form>
+
+{% if vendeur_profile.photo %}
+    <img src="{{ vendeur_profile.photo.url }}" alt="Photo de profil">
+{% endif %}

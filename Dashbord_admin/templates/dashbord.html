@@ -1,0 +1,88 @@
+<!-- 
+
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<div class="container">
+    <canvas id="ventesParAnnee"></canvas>
+    <canvas id="ventesParMois"></canvas>
+    <canvas id="topClients"></canvas>
+    <canvas id="topProduits"></canvas>
+</div>
+
+
+<!-- <script>
+    const ctx1 = document.getElementById('ventesParAnnee').getContext('2d');
+    const ventesParAnneeChart = new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: {{ ventes_par_annee|map: 'year'|date:'Y'|list }},
+        datasets: [{
+          label: 'Chiffre d\'affaire par an',
+          data: {{ ventes_par_annee|map: 'chiffre_affaire'|list }},
+          borderColor: 'rgb(75, 192, 192)',
+          tension: 0.1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script> -->
+
+ <!-- ventes par mois -->
+  <!-- <script>
+    const ctx2 = document.getElementById('ventesParMois').getContext('2d');
+    const ventesParMoisChart = new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: {{ ventes_par_mois|map: 'month'|date:'F Y'|list }},
+        datasets: [{
+          label: 'Chiffre d\'affaire par mois',
+          data: {{ ventes_par_mois|map: 'chiffre_affaire'|list }},
+          backgroundColor: 'rgb(153, 102, 255)',
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script> -->
+
+
+  <!-- top 5 meilleurs clients -->
+  <!-- <script>
+    const ctx3 = document.getElementById('topClients').getContext('2d');
+    const topClientsChart = new Chart(ctx3, {
+      type: 'horizontalBar',
+      data: {
+        labels: {{ top_clients|map:'prenoms'|list }},
+        datasets: [{
+          label: 'Total achats par client',
+          data: {{ top_clients|map:'total_achats'|list }},
+          backgroundColor: 'rgb(255, 99, 132)',
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script> --> -->
+

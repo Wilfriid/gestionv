@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Vendeur</title>
+    <!-- Ajoutez les liens vers Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Ajoutez votre propre fichier CSS pour les personnalisations -->
+    <link rel="stylesheet" href="path/to/your/custom.css">
+</head>
+<body>
+    <h1 class="text-center my-4">Profil Vendeur</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        Information du profil vendeur
+                        <a class="btn btn-info btn-sm float-right" href="#">Modifier</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">IdVendeur:</th>
+                                            <td>{{ vendeur.id_Vendeur }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Nom:</th>
+                                            <td>{{ vendeur.Nom }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Prenoms</th>
+                                            <td>{{ vendeur.Prenoms }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Telephone</th>
+                                            <td>{{ vendeur.Telephone }}</td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img-thumbnail" src="{{ vendeur.image.url }}" alt="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ajoutez les liens vers Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+  

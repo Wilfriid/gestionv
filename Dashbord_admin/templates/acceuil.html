@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Gestion des Ventes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            height: 350px;
+            margin: auto;
+            
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            background-image: url('../static/img/clients-assisted-by-salesman-eco-store.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+            background-size: cover; /* Ajuste la taille de l'image pour remplir le conteneur */
+            background-position: center; /* Positionne l'image au centre */
+            color: white; /* Couleur du texte sur l'image */
+        }
+        
+
+        .container1 {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn1 {
+            display: inline-block;
+            background-color: #3498db; /* Couleur bleue */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn1:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Bienvenue dans le Système de Gestion des Ventes de Magasin</h1>
+        <p> logiciel qui aide les entreprises à gérer leur processus de vente, de la génération de leads jusqu'à l'acquisition et la fidélisation de la clientèle. </p>
+        <a href="#" class="btn">Gérer les Ventes</a>
+        <a href="#" class="btn">Gérer les Clients</a>
+        <a href="#" class="btn">Gérer les Produits</a>
+        <a href="#" class="btn">Gérer les Stocks</a>
+        <a href="#" class="btn">Gérer les Fournisseurs</a>
+    </div>
+
+
+    <div class="container1">
+        <h1>Gerer son magasin devient si simple</h1>
+        
+        <a href="{% url 'connexion' %}" class="btn1">Se Connecter</a>
+        <a href="{% url 'inscription' %}" class="btn1">S'Inscrire</a>
+
+    </div>
+</body>
+</html>
